@@ -169,8 +169,6 @@ It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Align a
 
 Please do note the version and relationship of torch , torchvision and cuda (maybe cudatoolkit),they will work well only if with correct and harmonious visions.You can get help from [INSTALLING PREVIOUS VERSIONS OF PYTORCH](https://pytorch.org/get-started/previous-versions/) to avoid situation like this [undefined symbol: __cudaPopCallConfiguration](https://blog.csdn.net/qq1483661204/article/details/103834224) and this [cannot import name '_mask'](https://github.com/jwyang/faster-rcnn.pytorch/issues/410)
 
-
-
 >>> cuda version
 ```
 cat /usr/local/cuda/version.txt
@@ -182,7 +180,7 @@ nvcc -v
 ```
 conda list
 ```
-## Train[]
+## Train
 
 Before training, set the right directory to save and load the trained models. Change the arguments "save_dir" and "load_dir" in trainval_net.py and test_net.py to adapt to your environment.
 
