@@ -184,6 +184,14 @@ downdate/downgrade the scipy with
 pip install scipy==1.2.1
 ```
 
+<br> 
+
+for more information,go to 
+*  https://blog.csdn.net/weixin_42279610/article/details/103086379
+*  https://github.com/cocodataset/cocoapi/issues/59#issuecomment-469859646
+*  https://blog.csdn.net/weixin_43869778/article/details/96837042
+
+
 ![pic1](https://github.com/Alan-D-Chen/faster-rcnn.pytorch/blob/master/toolpics/20200721114022.png)
 >>> cuda version
 ```
