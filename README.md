@@ -143,7 +143,7 @@ pip install -r requirements.txt
 Compile the cuda dependencies using following simple commands:
 
 ```
-cd liboolkit
+cd lib
 python setup.py build develop
 ```
 
