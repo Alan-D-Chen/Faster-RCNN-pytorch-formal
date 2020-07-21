@@ -158,13 +158,19 @@ situation like this [undefined symbol: __cudaPopCallConfiguration](https://blog.
 
 
 >>>  If you get that problem [cannot import name '_mask'](https://github.com/jwyang/faster-rcnn.pytorch/issues/410) unluckly,do not worry~
+
 <br>
+
 * 1.Use git clone to clone the folder into your project root dir (anywhere) . In this case, it should be git clone https://github.com/cocodataset/cocoapi.git.
+
 * 2.Use terminal to enter the directory, or open a terminal inside the directory (in PythonAPI) and run make ,and then run  
+
+<br>
+
 ```
 python setup.py install
 ```
-
+<br>
 
 * 3.MOST IMPORTANT , delete the pycocotools folder in the root/lib/ dir of the project!!!!
 
