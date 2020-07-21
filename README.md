@@ -154,7 +154,29 @@ It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Align a
 ## NOTE：
 
 Please note that the version and relationship of pytorch, torchvision and cuda (maybe cudatoolkit),they will work well ,only if with correct and harmonious version. You can get some help from [Installing previous versions of PyTorch](https://pytorch.org/get-started/previous-versions/) to avoid 
-situation like this [undefined symbol: __cudaPopCallConfiguration](https://blog.csdn.net/qq1483661204/article/details/103834224) and that [cannot import name '_mask'](https://github.com/jwyang/faster-rcnn.pytorch/issues/410)
+situation like this [undefined symbol: __cudaPopCallConfiguration](https://blog.csdn.net/qq1483661204/article/details/103834224) .
+
+
+>>>  If you get that problem [cannot import name '_mask'](https://github.com/jwyang/faster-rcnn.pytorch/issues/410) unluckly,do not worry~
+<br>
+* 1.Use git clone to clone the folder into your project root dir (anywhere) . In this case, it should be git clone https://github.com/cocodataset/cocoapi.git.
+* 2.Use terminal to enter the directory, or open a terminal inside the directory (in PythonAPI) and run make ,and then run  
+```
+python setup.py install
+```
+
+
+* 3.MOST IMPORTANT , delete the pycocotools folder in the root/lib/ dir of the project!!!!
+
+
+>>> If you get that problem ```ImportError: cannot import name imread```
+
+<br>
+
+downdate/downgrade the scipy with
+```
+pip install scipy==1.2.1
+```
 
 ![pic1](https://github.com/Alan-D-Chen/faster-rcnn.pytorch/blob/master/toolpics/20200721114022.png)
 >>> cuda version
