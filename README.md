@@ -143,7 +143,7 @@ pip install -r requirements.txt
 Compile the cuda dependencies using following simple commands:
 
 ```
-cd lib
+cd liboolkit
 python setup.py build develop
 ```
 
@@ -151,6 +151,23 @@ It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Align a
 
 **As pointed out in this [issue](https://github.com/jwyang/faster-rcnn.pytorch/issues/16), if you encounter some error during the compilation, you might miss to export the CUDA paths to your environment.**
 
+## NOTE：
+
+Please note that the version and relationship of pytorch, torchvision and cuda (maybe cudatoolkit),they will work well ,only if with correct and harmonious version. You can get some help from [Installing previous versions of PyTorch](https://pytorch.org/get-started/previous-versions/) to avoid 
+situation like this [undefined symbol: __cudaPopCallConfiguration](https://blog.csdn.net/qq1483661204/article/details/103834224) and that [cannot import name '_mask'](https://github.com/jwyang/faster-rcnn.pytorch/issues/410)
+
+>>> cuda version
+```
+cat /usr/local/cuda/version.txt
+```
+```
+nvcc -v
+```
+
+>>> torch and torchvision version
+```
+conda list
+```
 ## Train
 
 Before training, set the right directory to save and load the trained models. Change the arguments "save_dir" and "load_dir" in trainval_net.py and test_net.py to adapt to your environment.
