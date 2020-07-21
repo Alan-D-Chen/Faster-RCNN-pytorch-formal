@@ -156,6 +156,7 @@ It will compile all the modules you need, including NMS, ROI_Pooing, ROI_Align a
 Please note that the version and relationship of pytorch, torchvision and cuda (maybe cudatoolkit),they will work well ,only if with correct and harmonious version. You can get some help from [Installing previous versions of PyTorch](https://pytorch.org/get-started/previous-versions/) to avoid 
 situation like this [undefined symbol: __cudaPopCallConfiguration](https://blog.csdn.net/qq1483661204/article/details/103834224) and that [cannot import name '_mask'](https://github.com/jwyang/faster-rcnn.pytorch/issues/410)
 
+![pic1](https://github.com/Alan-D-Chen/faster-rcnn.pytorch/blob/master/toolpics/20200721114022.png)
 >>> cuda version
 ```
 cat /usr/local/cuda/version.txt
